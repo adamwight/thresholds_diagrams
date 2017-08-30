@@ -11,6 +11,6 @@ set xlabel "Threshold"
 set term png
 set output "draftquality_thresholds.png"
 set datafile separator ","
-plot "draftquality-OK.csv" using 9:3 title "Recall", \
-    "draftquality-OK.csv" using 9:4 title "Precision", \
-    "draftquality-OK.csv" using 9:6 title "Filter rate"
+plot "draftquality-OK.csv" using 9:3 with lines title "Recall", \
+    "draftquality-OK.csv" using 9:4 with lines title "Precision", \
+    "draftquality-OK.csv" using 9:6 with lines title "Filter rate"
